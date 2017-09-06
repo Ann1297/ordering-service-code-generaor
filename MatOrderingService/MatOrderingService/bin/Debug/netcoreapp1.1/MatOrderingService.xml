@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MatOrderingService</name>
+    </assembly>
+    <members>
+        <member name="M:MatOrderingService.Controllers.OrdersController.Get">
+            <summary>
+            Get list of all orders
+            </summary>
+            <response code="200">Orders recieved</response>
+        </member>
+        <member name="M:MatOrderingService.Controllers.OrdersController.GetAsync(System.Int32)">
+            <summary>
+            Get an order by unique id
+            </summary>
+            <param name="id">Id of order to get</param>
+            <response code="200">Order recieved</response>
+            <response code="404">Order not found</response>
+        </member>
+        <member name="M:MatOrderingService.Controllers.OrdersController.Post(MatOrderingService.Models.NewOrder)">
+            <summary>
+            Create new order
+            </summary>
+            <param name="order">Properties of created order</param>
+            <response code="200">Order created</response>
+            <response code="400">Order is not valid</response>
+        </member>
+        <member name="M:MatOrderingService.Controllers.OrdersController.PutAsync(System.Int32,MatOrderingService.Models.EditOrder)">
+            <summary>
+            Updates an Order's Detail by unique id 
+            </summary>
+            <param name="id">Id of order to update</param>
+            <param name="value">New properties of the order</param>
+            <response code="200">Order updated</response>
+            <response code="400">Order is not valid</response>
+        </member>
+        <member name="M:MatOrderingService.Controllers.OrdersController.DeleteAsync(System.Int32)">
+            <summary>
+            Delete an order by unique id 
+            </summary>
+            <param name="id">Id of order to delete</param>
+            <response code="200">Order deleted</response>
+            <response code="400">Order is not deleted</response>
+        </member>
+        <member name="M:MatOrderingService.Controllers.OrdersController.GetStatistics">
+            <summary>
+            Get statistics about creators
+            </summary>
+            <response code="200">Statistics recieved</response>
+        </member>
+        <member name="M:MatOrderingService.Controllers.OrdersController.GetStatisticsDapper">
+            <summary>
+            Get statistics about creators using dapper
+            </summary>
+            <response code="200">Statistics recieved</response>
+        </member>
+    </members>
+</doc>
